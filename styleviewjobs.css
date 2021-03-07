@@ -1,0 +1,112 @@
+/*body css*/
+body{
+    background-color: rgb(226, 226, 65);
+}
+/*body css ends*/
+#form{
+    float: right;
+}
+/* NAVIGATION BAR CSS*/
+nav>ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav>ul>li{
+    float:left;
+}
+nav>ul>li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 65px;
+    text-decoration: none;
+    font-size: large;
+}
+li a :hover{
+    color: #363636
+}
+/*body*/
+
+#center2{
+    border: solid 1px rgb(27, 27, 27);
+    width: 1315px;
+    height: 70px;
+    margin:10px;
+    margin-top: 10px;
+    color: rgb(92, 91, 78);
+    text-align: center;
+}
+.grid-container .grid-20{
+    background: white;
+    padding: 15px;
+    margin-right: 60px; 
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+/*footer*/
+footer{
+    background-color: white;
+    height: 400px;
+   
+    
+   
+}
+
+.footerlogo{
+    margin-top: 30px;
+    text-align: left;
+    padding-top: 20px;
+    padding-left:10px;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 120px;
+    padding-top: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.2;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+  
+    color:black;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+   
+    color:black;
+  }
+  /*instagram*/
+  .fa-instagram{
+      color: black;
+  }
+
+  /*linkedin*/
+  .fa-linkedin{
+      color: black;
+  }
+
+  .grid-container8 .copyright{
+ padding-bottom: 10px;
+    text-align: center;
+
+  }
+/*removing the dots in the unordered list*/
+  .grid-33>ul{
+    list-style-type:none;
+
+  }

@@ -1,0 +1,127 @@
+/*body css*/
+body{
+    background-color: rgb(226, 226, 65);
+}
+/*body css ends*/
+#form{
+    float: right;
+}
+/* NAVIGATION BAR CSS*/
+nav>ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav>ul>li{
+    float:left;
+}
+nav>ul>li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 65px;
+    text-decoration: none;
+    font-size: large;
+}
+li a :hover{
+    color: #363636
+}
+/*body*/
+.container {
+    position: relative;
+    max-width: 1500px; /* Maximum width */
+    margin: 0 auto; /* Center it */
+    
+}
+  
+  .container .content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 97%; /* Full width */
+    padding: 20px; /* Some padding */
+   
+}
+  /*grid styling*/
+  .grid-container .grid-50{
+   
+    padding-left: 15px;
+    margin-right: 20px;
+    margin-top: 10px;
+    height: 500px;
+    font-style: italic;
+}
+.grid-container2 .grid-40{
+   
+    padding: 20px;
+    margin-right: 10px; 
+    margin-top: 10px;
+}
+/*grid styling end*/
+
+/*footer*/
+footer{
+    background-color: white;
+    height: 400px;
+   
+    
+   
+}
+
+.footerlogo{
+    margin-top: 30px;
+    text-align: left;
+    padding-top: 20px;
+    padding-left:10px;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 120px;
+    padding-top:10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.2;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+  
+    color:black;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+   
+    color:black;
+  }
+  /*instagram*/
+  .fa-instagram{
+      color: black;
+  }
+
+  /*linkedin*/
+  .fa-linkedin{
+      color: black;
+  }
+
+ 
+
+/*removing the dots in the unordered list*/
+  .grid-33>ul{
+    list-style-type:none;
+
+  }
+    
+

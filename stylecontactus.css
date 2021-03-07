@@ -1,0 +1,51 @@
+/*body css*/
+body{
+    background-color: rgb(226, 226, 65);
+}
+/*body css ends*/
+#form{
+    float: right;
+}
+/* NAVIGATION BAR CSS*/
+nav>ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav>ul>li{
+    float:left;
+}
+nav>ul>li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 65px;
+    text-decoration: none;
+    font-size: large;
+}
+li a :hover{
+    color: #363636
+}
+/*body*/
+.container {
+    position: relative;
+    max-width: 1500px; /* Maximum width */
+    margin: 0 auto; /* Center it */
+    
+}
+  
+  .container .content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 97%; /* Full width */
+    padding: 20px; /* Some padding */
+   
+}
+
+.grid-container .grid-100{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
