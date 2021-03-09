@@ -20,12 +20,12 @@
     <!--NAVIGATION STARTS-->
     <nav>
         <ul>
-            <li><a href="Home.html">|Home|</a></li>
-            <li><a href="Login.html">|Login|</a></li>
-            <li><a href="ViewJobs.html">|View Jobs|</a></li>
-            <li><a href="CareerAdvice.html">|Career Advice|</a></li>
-            <li><a href="Register.html">|Register/Upload CV|</a></li>
-            <li><a href="ContactUs.html">|Contact Us|</a></li>   
+            <li><a href="Home.php">|Home|</a></li>
+            <li><a href="Login.php">|Login|</a></li>
+            <li><a href="ViewJobs.php">|View Jobs|</a></li>
+            <li><a href="CareerAdvice.php">|Career Advice|</a></li>
+            <li><a href="Register.php">|Register/Upload CV|</a></li>
+            <li><a href="ContactUs.php">|Contact Us|</a></li>   
             
         </ul>
     </nav>
