@@ -1,3 +1,64 @@
+<?php 
+include("db.php");
+
+if(isset ($_POST["Register"])){
+    $firstname = mysqli_real_escape_string($db, $_POST["fname"]);
+    $lastname = mysqli_real_escape_string($db, $_POST["lname"]);
+    $age = mysqli_real_escape_string($db, $_POST["age"]);
+    $gender = mysqli_real_escape_string($db, $_POST["gender"]);
+    $emailaddress = mysqli_real_escape_string($db, $_POST["email"]);
+    $phone_number = mysqli_real_escape_string($db, $_POST["phone"]);
+    $salary_expectation = mysqli_real_escape_string($db, $_POST["salary"]);
+    $password = mysqli_real_escape_string($db, $_POST["password"]);
+    $profile = mysqli_real_escape_string($db, $_POST["profile"]);
+    $cv =  $_POST["filetoupload"];
+
+    $target_dir = "cv/";
+    $target_file = $target_dir . basename($_FILES["filetoupload"] ["name"]);
+    $uploadok = 1;
+    $filetype = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+
+    if(empty($emailaddress) || empty($password) || empty($firstname) || empty($lastname) || empty($age) || empty($gender) || empty($cv)){
+        $message1 ="All fields are required";
+    }elseif($_FILES["filetoupload"]["size"] > 500000){
+        $message1 = "Sorry, your file is too large.";
+    }elseif($filetype != "pdf" && $filetype != "doc" && $filetype != "docx"){
+        $message1 = "Sorry, only pdf, doc and docx are allowed";
+           }else{
+            if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+                echo "The file" . htmlspecialchars(basename($FILES["fileToUpload"]["name"])). "has been uploaded.";
+            } else {
+                echo "Sorry, there was an error uploading your file.";
+            }
+           }
+           
+
+    
+        $sql = "INSERT INTO USERS (firstname, lastname,age,gender,emailaddress,phone_number,salary_expectation,password,profile,cv)
+        values ('$firstname','$lastname','$age','$gender','$emailaddress','phone_number','salary_expectation','password','profile','cv')";
+        if (mysqli_query($db, $sql)) {
+            $message2 = "New record created succesfully";
+            
+        } else {
+            echo "Error:" .$sql . "<br>" . mysqli_error($db);
+        
+        mysqli_close($db);
+        }
+    }
+        ?>
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +97,9 @@
         <div class="container">
             <img src="images/pic8.jpg" alt="jobs" style="width:100%; height: 900px;">
             <div class="content">
-                <form><br>
+               <p style="color: red;"> <?php if(isset($message1)){ echo $message1; }?> </p>
+             <p>   <?php if(isset($message2)){ echo $message2; }?> </p>
+                <form action="" method="post" enctype="multipart/form-data"><br>
                     <label for="fname">First name:</label><br>
                     <input type="text" id="fname" name="fname" maxlength="80" size="50"><br><br>
                     <label for="lname">Last name:</label><br>
@@ -56,24 +119,31 @@
                     <label for="female">Female</label><br>
                     <input type="radio" id="other" name="gender" value="other">
                     <label for="other">Other</label><br><br>
+
                     <label for="email">Email address:</label><br>
                     <input type="email" id="email" name="email"><br><br>
+
                     <label for="phone">Phone number:</label><br>
                     <input type="tel" id="phone" name="phone"><br><br>
+
                     <label for="salary">Salary expectation:</label><br>
                     <input type="text" id="salary" name="salary"><br><br>
+
                     <label for="password">Password:</label><br>
                     <input type="password" id="password" name="password"><br><br>
+
                     <label for="Profile">Profile:</label><br>
-                    <textarea id="textarea" name="textarear" rows="8" cols="50"> Briefly tell us about yourself
+                    <textarea id="textarea" name="profile" rows="8" cols="50"> Briefly tell us about yourself
                     </textarea><br><br>
+
                     <label for="myfile">Attach CV</label><br>
-                    <input type="file" id="myfile" name="myfile"><br><br><br><br>
+                    <input type="file" id="myfile" name="filetoupload"><br><br><br><br>
+
                     <input type="checkbox" id="emailalert" name="emailalert" value="emailalert">
                     <label for="emailalert">Receive Alert Job Alert </label><br>
                     <input type="checkbox" id="privacyterms" name="privacyterms" value="privacyterms">
                     <label for="privacyterms">I have read and understood the privacy terms </label><br><br>
-                    <input type="submit" value="Register">
+                    <input type="submit" value="Register" name="Register">
 
 
           </form>
