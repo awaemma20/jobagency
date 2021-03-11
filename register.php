@@ -5,42 +5,46 @@ if(isset ($_POST["Register"])){
     $firstname = mysqli_real_escape_string($db, $_POST["fname"]);
     $lastname = mysqli_real_escape_string($db, $_POST["lname"]);
     $age = mysqli_real_escape_string($db, $_POST["age"]);
-    $gender = mysqli_real_escape_string($db, $_POST["gender"]);
+    $gender =  $_POST["gender"];
     $emailaddress = mysqli_real_escape_string($db, $_POST["email"]);
     $phone_number = mysqli_real_escape_string($db, $_POST["phone"]);
     $salary_expectation = mysqli_real_escape_string($db, $_POST["salary"]);
     $password = mysqli_real_escape_string($db, $_POST["password"]);
     $profile = mysqli_real_escape_string($db, $_POST["profile"]);
-    $cv =  $_POST["filetoupload"];
+    
 
     $target_dir = "cv/";
     $target_file = $target_dir . basename($_FILES["filetoupload"] ["name"]);
     $uploadok = 1;
     $filetype = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
-    if(empty($emailaddress) || empty($password) || empty($firstname) || empty($lastname) || empty($age) || empty($gender) || empty($cv)){
+    if(empty($emailaddress) || empty($password) || empty($firstname) || empty($lastname) || empty($age) || empty($gender) || empty($target_file)){
         $message1 ="All fields are required";
     }elseif($_FILES["filetoupload"]["size"] > 500000){
         $message1 = "Sorry, your file is too large.";
     }elseif($filetype != "pdf" && $filetype != "doc" && $filetype != "docx"){
         $message1 = "Sorry, only pdf, doc and docx are allowed";
            }else{
-            if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-                echo "The file" . htmlspecialchars(basename($FILES["fileToUpload"]["name"])). "has been uploaded.";
-            } else {
-                echo "Sorry, there was an error uploading your file.";
-            }
+            if (move_uploaded_file($_FILES["filetoupload"]["tmp_name"], $target_file)) {
+                $sql = "INSERT INTO USERS (firstname, lastname,age,gender,emailaddress,phone_number,salary_expectation,password,profile,cv)
+                 values ('$firstname','$lastname','$age','$gender','$emailaddress','$phone_number','$salary_expectation','$password','$profile','$target_file')";
+                 if (mysqli_query($db, $sql)) {
+                 $message2 = "upload successful!";  
+        } 
+        else {
+            echo "Error:" .$sql . "<br>" . mysqli_error($db);
+            } 
            }
            
 
     
-        $sql = "INSERT INTO USERS (firstname, lastname,age,gender,emailaddress,phone_number,salary_expectation,password,profile,cv)
-        values ('$firstname','$lastname','$age','$gender','$emailaddress','phone_number','salary_expectation','password','profile','cv')";
-        if (mysqli_query($db, $sql)) {
-            $message2 = "New record created succesfully";
+       // $sql = "INSERT INTO USERS (firstname, lastname,age,gender,emailaddress,phone_number,salary_expectation,password,profile,cv)
+        //values ('$firstname','$lastname','$age','$gender','$emailaddress','$phone_number','$salary_expectation','$password','$profile','$target_file')";
+        //if (mysqli_query($db, $sql)) {
+          //  $message2 = "upload successful!";
             
-        } else {
-            echo "Error:" .$sql . "<br>" . mysqli_error($db);
+       // } else {
+         //   echo "Error:" .$sql . "<br>" . mysqli_error($db);
         
         mysqli_close($db);
         }
@@ -113,12 +117,12 @@ if(isset ($_POST["Register"])){
                     <option value="56 & above">56 & above</option>
                     </select><br><br>
 
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Male</label><br>
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Female</label><br>
-                    <input type="radio" id="other" name="gender" value="other">
-                    <label for="other">Other</label><br><br>
+                    <label for="gender">Gender:</label><br>
+                    <select name="gender" id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                    </select><br><br>
 
                     <label for="email">Email address:</label><br>
                     <input type="email" id="email" name="email"><br><br>
