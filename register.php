@@ -38,14 +38,8 @@ if(isset ($_POST["Register"])){
            
 
     
-       // $sql = "INSERT INTO USERS (firstname, lastname,age,gender,emailaddress,phone_number,salary_expectation,password,profile,cv)
-        //values ('$firstname','$lastname','$age','$gender','$emailaddress','$phone_number','$salary_expectation','$password','$profile','$target_file')";
-        //if (mysqli_query($db, $sql)) {
-          //  $message2 = "upload successful!";
-            
-       // } else {
-         //   echo "Error:" .$sql . "<br>" . mysqli_error($db);
-        
+      
+      
         mysqli_close($db);
         }
     }
@@ -69,9 +63,9 @@ if(isset ($_POST["Register"])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styleregister.css">
-    <link rel="stylesheet" href="unsemantic-grid-responsive-tablet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styleregister.css"> <!-- LINK TO CSS -->
+    <link rel="stylesheet" href="unsemantic-grid-responsive-tablet.css"> <!-- LINKING TO UNSEMANTIC-GRID -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- LINKING THE CODE LIBRARY: cdnjs/font-awesome" to syle my fonts -->
     <title>register</title>
 </head>
 <body>
@@ -83,12 +77,12 @@ if(isset ($_POST["Register"])){
         <!--NAVIGATION STARTS-->
         <nav>
             <ul>
-                <li><a href="Home.php">|Home|</a></li>
-                <li><a href="Login.php">|Login|</a></li>
+                <li><a href="Home.php">|Home|</a></li> 
                 <li><a href="ViewJobs.php">|View Jobs|</a></li>
                 <li><a href="CareerAdvice.php">|Career Advice|</a></li>
                 <li><a href="Register.php">|Register/Upload CV|</a></li>
-                <li><a href="ContactUs.php">|Contact Us|</a></li>   
+                <li><a href="ContactUs.php">|Contact Us|</a></li>  
+                <li><a href="Login.php">|Logout|</a></li> 
                 
             </ul>
         </nav>
@@ -104,6 +98,9 @@ if(isset ($_POST["Register"])){
                <p style="color: red;"> <?php if(isset($message1)){ echo $message1; }?> </p>
              <p>   <?php if(isset($message2)){ echo $message2; }?> </p>
                 <form action="" method="post" enctype="multipart/form-data"><br>
+
+                <!-- form starts -->
+
                     <label for="fname">First name:</label><br>
                     <input type="text" id="fname" name="fname" maxlength="80" size="50"><br><br>
                     <label for="lname">Last name:</label><br>
@@ -151,13 +148,25 @@ if(isset ($_POST["Register"])){
 
 
           </form>
+<!-- form ends -->
     </main>
 </body>
 
+<!--footer starts-->
 <footer>
     <div class="footerlogo">
         <img src="images/Awajobs2.png" width="200" height="70">
     </div><br>
+
+     <!-- ADDING SOCIAL MEDIA BUTTONS -->
+
+    <!-- 
+        * Title: How to- social media  buttons
+        * Author: W3schools
+        * Date: 2021
+        * Code version: 2.0
+        * Availability: https://w3schools.com/howto/howto_css_social_media_buttons.asp
+     -->
     <nav>
         <ul>
             <li> <a href="https://www.facebook.com" class="fa fa-facebook"></a></li>
@@ -205,4 +214,4 @@ if(isset ($_POST["Register"])){
 
     
 </footer>
-    
+<!--footer ends -->

@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="stylecareeradvice.css">
-    <link rel="stylesheet" href="unsemantic-grid-responsive-tablet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="stylecareeradvice.css"> <!--LINKING TO CSS -->
+    <link rel="stylesheet" href="unsemantic-grid-responsive-tablet.css"> <!-- LINKING TO UNSEMANTIC-GRID -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- LINKING THE CODE LIBRARY: cdnjs/font-awesome" to syle my fonts -->
     <title>career advice</title>
 </head>
 <body>
@@ -19,11 +19,11 @@
         <nav>
             <ul>
                 <li><a href="Home.php">|Home|</a></li>
-                <li><a href="Login.php">|Login|</a></li>
                 <li><a href="ViewJobs.php">|View Jobs|</a></li>
                 <li><a href="CareerAdvice.php">|Career Advice|</a></li>
                 <li><a href="register.php">|Register/Upload CV|</a></li>
-                <li><a href="ContactUs.php">|Contact Us|</a></li>   
+                <li><a href="ContactUs.php">|Contact Us|</a></li> 
+                <li><a href="login.php">|Logout|</a></li> 
                 
             </ul>
         </nav>
@@ -34,14 +34,16 @@
         </div>
     
     <!--NAIGATION END-->
+
     <!--MAIN STARTS-->
     <main>
             
-            <embed src= "images/video2.mp4" autostart="false" height="300" width="600" id= "video"/>
+            <embed src= "images/video2.mp4" height="300" width="600" id= "video"/>
             
               
-            
-            <section class="grid-container1">
+<!-- CODE LIBRARY USED IS "unsemantic-grid-responsive-tablet.css" -->
+
+            <section class="grid-container1"> 
                 <div class="grid-10">
             
                 </div>
@@ -94,15 +96,30 @@
 
                         
                 </div>
-            </main>
+            </main> 
+            <!-- MAIN ENDS -->
     
-</body>
+</body> 
+<!-- BODY ENDS -->
+
+<!-- FOOTER STARTS -->
 
 <footer>
     <div class="footerlogo">
         <img src="images/Awajobs2.png" width="200" height="70">
     </div><br>
     <nav>
+
+    <!-- ADDING SOCIAL MEDIA BUTTONS -->
+
+    <!-- 
+        * Title: How to- social media  buttons
+        * Author: W3schools
+        * Date: 2021
+        * Code version: 2.0
+        * Availability: https://w3schools.com/howto/howto_css_social_media_buttons.asp
+     -->
+
         <ul>
             <li> <a href="https://www.facebook.com" class="fa fa-facebook"></a></li>
             <li> <a href="https://twitter.com" class="fa fa-twitter"></a></li>
@@ -111,8 +128,9 @@
         </ul>
     </nav>
 
+ <!-- CODE LIBRARY USED IS "unsemantic-grid-responsive-tablet.css" -->
 
-    <div class="grid-container5">
+    <div class="grid-container5">    
         <div class="grid-33">
             <ul>
                 <h4>Talk to us</h4>
@@ -150,4 +168,5 @@
     
 
 </footer>
+<!-- FOOTER ENDS -->
 

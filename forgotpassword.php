@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>forgot password</title>
-    <link rel="stylesheet" href="styleforgotpassword.css">
+    <link rel="stylesheet" href="styleforgotpassword.css"> <!-- link to css -->
     
 </head>
 <body>
-        
-    <div class="grid-container1">
+    
+    <!-- CODE LIBRARY USED IS "unsemantic-grid-responsive-tablet.css" -->
+
+    <div class="grid-container1"> 
         <div class="grid-50">
         <form method = post action="validate.php" class="container">
           <h1>FORGOT PASSWORD</h1>

@@ -6,17 +6,19 @@ body{
 #form{
     float: right;
 }
+
 /* NAVIGATION BAR CSS*/
-nav>ul{
+
+nav>ul{             /*removing of bullet points from the nav*/
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
-nav>ul>li{
+nav>ul>li{       /*floats each individual list item to the left*/
     float:left;
 }
-nav>ul>li a{
+nav>ul>li a{    /* removes the underlined, centers the text and gives it some padding*/
     display: block;
     color: black;
     text-align: center;
@@ -27,7 +29,16 @@ nav>ul>li a{
 li a :hover{
     color: #363636
 }
-/*body*/
+
+/*
+* Title: How to create a transparent image text. Add css
+* Author: W3schools
+* Date: 2021
+* Code version: 2.0
+* Availability: https://w3schools.com/howto/howto_css_image_transparent.asp 
+ */ 
+
+ /*body*/
 .container {
     position: relative;
     max-width: 1500px; /* Maximum width */
@@ -66,9 +77,6 @@ li a :hover{
 footer{
     background-color: white;
     height: 400px;
-   
-    
-   
 }
 
 .footerlogo{
@@ -77,6 +85,14 @@ footer{
     padding-top: 20px;
     padding-left:10px;
 }
+
+/*
+* Title: How to- social media  buttons .CSS
+* Author: W3schools
+* Date: 2021
+* Code version: 2.0
+* Availability: https://w3schools.com/howto/howto_css_social_media_buttons.asp 
+ */ 
 
 /* Style all font awesome icons */
 .fa {
@@ -123,5 +139,6 @@ footer{
     list-style-type:none;
 
   }
+  /*footer ends*/
     
 

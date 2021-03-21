@@ -4,33 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="stylecontactus.css">
-    <link rel="stylesheet" href="unsemantic-grid-responsive-tablet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="stylecontactus.css"> <!--LINKING TO CSS -->
+    <link rel="stylesheet" href="unsemantic-grid-responsive-tablet.css"> <!-- LINKING TO UNSEMANTIC-GRID -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- LINKING THE CODE LIBRARY: cdnjs/font-awesome" to syle my fonts -->
     <title>contact Us</title>
+    
 </head>
 <body>
       <!--HEADER START-->
       <header>
-        <img src="images/Awajobs2.png" alt="logo" width= "240" height="80" >
+        <img src="images/Awajobs2.png" alt="logo" width= "240" height="80" > <!-- resizing the logo -->
         
         
         <!--NAVIGATION STARTS-->
         <nav>
             <ul>
-                <li><a href="Home.php">|Home|</a></li>
-                <li><a href="Login.php">|Login|</a></li>
+                <li><a href="Home.php">|Home|</a></li>   
                 <li><a href="ViewJobs.php">|View Jobs|</a></li>
                 <li><a href="CareerAdvice.php">|Career Advice|</a></li>
                 <li><a href="Register.php">|Register/Upload CV|</a></li>
-                <li><a href="ContactUs.php">|Contact Us|</a></li>   
+                <li><a href="ContactUs.php">|Contact Us|</a></li>
+                <li><a href="Login.php">|Logout|</a></li>   
                 
             </ul>
         </nav>
         <!--NAIGATION END-->
+
     <!--MAIN STARTS-->
+
     <main>
-        
+    
         <div class="container">
             <img src="images/pic7.jpg" alt="contactus" style="width:100%; height: 300px;">
             <div class="content">
@@ -38,6 +41,7 @@
               
             </div>
         </div>
+    <!-- CODE LIBRARY USED IS "unsemantic-grid-responsive-tablet.css" -->
 
         <section class="grid-container">
             <div class="grid-100">
@@ -49,7 +53,8 @@
 
                     Click here to go to our Help Centre and submit a query directly to one of our teams. You can use the Help Centre to:</h4>
                 </p>
-                <ul>
+                <ul> <!-- using un-ordered list to show listed items -->
+
                     <li>Request for online chat</li>
                     <li>Request CV proof reading</li>
                     <li>Request your P45</li>
@@ -90,3 +95,4 @@
 
 
                 </p>
+    <!-- MAIN ENDS  -->

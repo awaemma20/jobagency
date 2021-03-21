@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login page</title>
-    <link rel="stylesheet" href="stylelogin.css">
+    <link rel="stylesheet" href="stylelogin.css"> <!-- link to css -->
     
 </head>
 <body>
-        
+     
+<!-- CODE LIBRARY USED IS "unsemantic-grid-responsive-tablet.css" -->
+
     <div class="grid-container1">
         <div class="grid-50">
-        <form method = post action="validate.php" class="container">
+        <form method = post action="validate.php" class="container"> <!-- post method -->
           <h1>Login</h1>
-      
+
+        <!-- form starts -->
           <label for="email"><b>Email Address</b></label>
           <input type="text" placeholder="Enter Email" name="email" required>
       
@@ -24,8 +27,9 @@
           <button type="submit" class="btn">Login</button>
           
          <button type="Signup" class="btn"><a href="register.php">Signup</a></button>
-         <a href="forgot password.html">forgot Password</a>
-        </form>
+         <a href="forgotpassword.php">forgot Password</a>
+        </form> 
+        <!-- form ends -->
     </div>
 
     <div class= "grid-container2">

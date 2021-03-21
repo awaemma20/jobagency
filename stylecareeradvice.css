@@ -3,20 +3,26 @@ body{
     background-color: rgb(226, 226, 65);
 }
 /*body css ends*/
+
 #form{
     float: right;
 }
+
+
+
+
+
 /* NAVIGATION BAR CSS*/
 nav>ul{
-    list-style-type: none;
+    list-style-type: none; /*removing of bullet points from the nav*/
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
-nav>ul>li{
+nav>ul>li{                 /*floats each individual list item to the left*/
     float:left;
 }
-nav>ul>li a{
+nav>ul>li a{               /* removes the underlined, centers the text and gives it some padding*/
     display: block;
     color: black;
     text-align: center;
@@ -24,7 +30,7 @@ nav>ul>li a{
     text-decoration: none;
     font-size: large;
 }
-li a :hover{
+li a :hover{                /*gives the hover a colour*/
     color: #363636
 }
 #center2{
@@ -37,17 +43,20 @@ li a :hover{
     text-align: center;
 }
 
+/*NAVIGATION BAR CSS ENDS*/
 
+/*Styling Main CSS*/
 main{
    text-align: center;
    padding: 20px;
    padding-left: 20px;
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*choosing a favourite font*/
 }
 .grid-container2 .grid-75{
     margin-left: 130px;
     text-align: justify;
 }
+/*Styling Main CSS ends*/
 
 /*footer*/
 footer{
@@ -58,13 +67,21 @@ footer{
     
    
 }
-
+/*Styling footer logo*/
 .footerlogo{
     margin-top: 30px;
     text-align: left;
     padding-top: 20px;
     padding-left:10px;
 }
+
+/*
+* Title: How to- social media  buttons .CSS
+* Author: W3schools
+* Date: 2021
+* Code version: 2.0
+* Availability: https://w3schools.com/howto/howto_css_social_media_buttons.asp 
+ */ 
 
 /* Style all font awesome icons */
 .fa {
@@ -76,7 +93,7 @@ footer{
     text-decoration: none;
   }
   
-  /* Add a hover effect if you want */
+  /* Add a hover effect */
   .fa:hover {
     opacity: 0.2;
   }
@@ -104,14 +121,11 @@ footer{
       color: black;
   }
 
-  .grid-container8 .copyright{
- padding-bottom: 10px;
-    text-align: center;
-
-  }
+  
 /*removing the dots in the unordered list*/
   .grid-33>ul{
     list-style-type:none;
 
   }
+  /*Footer styling CSS ends*/
 

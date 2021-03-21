@@ -8,15 +8,15 @@ body{
 }
 /* NAVIGATION BAR CSS*/
 nav>ul{
-    list-style-type: none;
+    list-style-type: none;      /*removing of bullet points from the nav*/
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
-nav>ul>li{
+nav>ul>li{           /*floats each individual list item to the left*/
     float:left;
 }
-nav>ul>li a{
+nav>ul>li a{    /* removes the underlined, centers the text and gives it some padding*/
     display: block;
     color: black;
     text-align: center;
@@ -43,16 +43,13 @@ li a :hover{
     padding: 15px;
     margin-right: 60px; 
     margin-top: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*choosing a favourite font*/
 
 }
 /*footer*/
 footer{
     background-color: white;
     height: 400px;
-   
-    
-   
 }
 
 .footerlogo{
@@ -61,6 +58,14 @@ footer{
     padding-top: 20px;
     padding-left:10px;
 }
+
+/*
+* Title: How to- social media  buttons .CSS
+* Author: W3schools
+* Date: 2021
+* Code version: 2.0
+* Availability: https://w3schools.com/howto/howto_css_social_media_buttons.asp 
+ */ 
 
 /* Style all font awesome icons */
 .fa {
@@ -110,3 +115,4 @@ footer{
     list-style-type:none;
 
   }
+  /*footer ends*/

@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styleviewjobs.css">
-    <link rel="stylesheet" href="unsemantic-grid-responsive-tablet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styleviewjobs.css"> <!-- ,link to css-->
+    <link rel="stylesheet" href="unsemantic-grid-responsive-tablet.css">   <!-- LINKING TO UNSEMANTIC-GRID -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- LINKING THE CODE LIBRARY: cdnjs/font-awesome" to syle my fonts -->
     <title>view jobs</title>
 </head>
 <body>
     <header>
         <img src="images/Awajobs2.png" alt="logo" width= "240" height="80" >
         <form id="form"> 
-            <input type="search" id="query" name="q" placeholder="Search jobs...">
+            <input type="search" id="query" name="q" placeholder="Search jobs..."> <!-- search for job -->
             <button>Search..</button>
         </form>
         
     <!--NAVIGATION STARTS-->
     <nav>
         <ul>
-            <li><a href="Home.php">|Home|</a></li>
-            <li><a href="Login.php">|Login|</a></li>
+            <li><a href="Home.php">|Home|</a></li>  
             <li><a href="ViewJobs.php">|View Jobs|</a></li>
             <li><a href="CareerAdvice.php">|Career Advice|</a></li>
             <li><a href="Register.php">|Register/Upload CV|</a></li>
-            <li><a href="ContactUs.php">|Contact Us|</a></li>   
+            <li><a href="ContactUs.php">|Contact Us|</a></li> 
+            <li><a href="Login.php">|Logout|</a></li>  
             
         </ul>
     </nav>
@@ -44,8 +44,10 @@
                 
                   
             </div>
-            
-            <section class="grid-container">
+        
+<!-- CODE LIBRARY USED IS "unsemantic-grid-responsive-tablet.css" -->
+
+            <section class="grid-container"> 
                 <div class="grid-20">
 
                     <p>
@@ -57,7 +59,7 @@
                          to estranged students
                          Estranged students are those who apply for university and enrol on a course 
                          without the support of a family network. <br><br>
-                         <button type="button">Apply</button>
+                         <button type="button"> <a href="apply.php">Apply </a></button>
                         </p>
                     
 
@@ -73,7 +75,7 @@
                          to estranged students
                          Estranged students are those who apply for university and enrol on a course 
                          without the support of a family network.<br><br>
-                         <button type="button">Apply</button>
+                         <button type="button"> <a href="apply.php">Apply </a></button>
                         </p>
                                     
 
@@ -90,7 +92,7 @@
                          to estranged students
                          Estranged students are those who apply for university and enrol on a course 
                          without the support of a family network. <br><br>
-                         <button type="button">Apply</button>
+                         <button type="button"> <a href="apply.php">Apply </a></button>
                         </p>
                             </div>
 
@@ -104,7 +106,7 @@
                              to estranged students
                              Estranged students are those who apply for university and enrol on a course 
                              without the support of a family network. <br><br>
-                             <button type="button">Apply</button>
+                             <button type="button"> <a href="apply.php">Apply </a></button>
                             </p>
                                 </div>
 
@@ -118,7 +120,7 @@
                                  to estranged students
                                  Estranged students are those who apply for university and enrol on a course 
                                  without the support of a family network. <br><br>
-                                 <button type="button">Apply</button>
+                                 <button type="button"> <a href="apply.php">Apply </a></button>
                                 </p>
                                     </div>
                                 
@@ -132,7 +134,7 @@
                                      to estranged students
                                      Estranged students are those who apply for university and enrol on a course 
                                      without the support of a family network. <br><br>
-                                     <button type="button">Apply</button>
+                                     <button type="button"> <a href="apply.php">Apply </a></button>
                                     </p>
                                         </div>
                                         <div class="grid-container7">
@@ -145,7 +147,7 @@
                                          to estranged students
                                          Estranged students are those who apply for university and enrol on a course 
                                          without the support of a family network. <br><br>
-                                         <button type="button">Apply</button>
+                                         <button type="button"> <a href="apply.php">Apply </a></button>
                                         </p>
                                             </div>
                                             <div class="grid-container8">
@@ -158,7 +160,7 @@
                                              to estranged students
                                              Estranged students are those who apply for university and enrol on a course 
                                              without the support of a family network. <br><br>
-                                             <button type="button">Apply</button>
+                                             <button type="button"> <a href="apply.php">Apply </a></button>
                                             </p>
                                                 </div>
                                                 <div class="grid-container10">
@@ -171,7 +173,7 @@
                                                  to estranged students
                                                  Estranged students are those who apply for university and enrol on a course 
                                                  without the support of a family network. <br><br>
-                                                 <button type="button">Apply</button>
+                                                 <button type="button"> <a href="apply.php">Apply </a></button>
                                                 </p>
                                                     </div>
                                                 </div>
@@ -185,7 +187,7 @@
                                                  to estranged students
                                                  Estranged students are those who apply for university and enrol on a course 
                                                  without the support of a family network. <br><br>
-                                                 <button type="button">Apply</button>
+                                                 <button type="button"> <a href="apply.php">Apply </a></button>
                                                 </p>
                                                     </div>
                                                 </div>
@@ -199,7 +201,7 @@
                                                  to estranged students
                                                  Estranged students are those who apply for university and enrol on a course 
                                                  without the support of a family network. <br><br>
-                                                 <button type="button">Apply</button>
+                                                 <button type="button"> <a href="apply.php">Apply </a></button>
                                                 </p>
                                                     </div>
                                                 </div>
@@ -213,7 +215,7 @@
                                                  to estranged students
                                                  Estranged students are those who apply for university and enrol on a course 
                                                  without the support of a family network. <br><br>
-                                                 <button type="button">Apply</button>
+                                                 <button type="button"> <a href="apply.php">Apply </a></button>
                                                 </p>
                                                     </div>
                                                 </div>
@@ -227,7 +229,7 @@
                                                  to estranged students
                                                  Estranged students are those who apply for university and enrol on a course 
                                                  without the support of a family network. <br><br>
-                                                 <button type="button">Apply</button>
+                                                 <button type="button"> <a href="apply.php">Apply </a></button>
                                                 </p>
                                                     </div>
                                                     <div class="grid-container15">
@@ -240,7 +242,7 @@
                                                      to estranged students
                                                      Estranged students are those who apply for university and enrol on a course 
                                                      without the support of a family network. <br><br>
-                                                     <button type="button">Apply</button>
+                                                     <button type="button"> <a href="apply.php">Apply </a></button>
                                                     </p>
                                                         </div>
                                                         <div class="grid-container15">
@@ -253,7 +255,7 @@
                                                          to estranged students
                                                          Estranged students are those who apply for university and enrol on a course 
                                                          without the support of a family network. <br><br>
-                                                         <button type="button">Apply</button>
+                                                         <button type="button"> <a href="apply.php">Apply </a></button>
                                                         </p>
                                                             </div>
                                                             <div class="grid-container15">
@@ -266,7 +268,7 @@
                                                              to estranged students
                                                              Estranged students are those who apply for university and enrol on a course 
                                                              without the support of a family network. <br><br>
-                                                             <button type="submit">Apply</button>
+                                                             <button type="button"> <a href="apply.php">Apply </a></button>
                                                             </p>
                                                                
     </header>
@@ -275,9 +277,20 @@
 
 
  <footer>
+     <!-- footer starts -->
+
     <div class="footerlogo">
         <img src="images/Awajobs2.png" width="200" height="70">
     </div><br>
+
+    <!-- 
+        * Title: How to- social media  buttons
+        * Author: W3schools
+        * Date: 2021
+        * Code version: 2.0
+        * Availability: https://w3schools.com/howto/howto_css_social_media_buttons.asp
+     -->
+
     <nav>
         <ul>
             <li> <a href="https://www.facebook.com" class="fa fa-facebook"></a></li>
@@ -325,6 +338,7 @@
 
    
 </footer>
+<!-- footer ends -->
                                 
                                 
                                 

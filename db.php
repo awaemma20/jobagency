@@ -1,3 +1,12 @@
+<!-- 
+   * Title: PHP CONNECT TO MYSQL
+        * Author: W3schools
+        * Date: 2021
+        * Code version: 2.0
+        * Availability: https://www.w3schools.com/php/php_mysql_connect.asp
+ -->
+
+<!-- setting up connection with database -->
 
 <?php
   $servername="localhost";

@@ -8,15 +8,16 @@ body{
 }
 /* NAVIGATION BAR CSS*/
 nav>ul{
-    list-style-type: none;
+    list-style-type: none; /*removing of bullet points from the nav*/
+    margin: 0;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 nav>ul>li{
-    float:left;
+    float:left;  /*floats each individual list item to the left*/
 }
-nav>ul>li a{
+nav>ul>li a{       /* removes the underlined, centers the text and gives it some padding*/
     display: block;
     color: black;
     text-align: center;
@@ -24,10 +25,19 @@ nav>ul>li a{
     text-decoration: none;
     font-size: large;
 }
-li a :hover{
+li a :hover{     /* hover effect*/
     color: #363636
 }
 /*body*/
+
+/*
+* Title: How to create a transparent image text. Add css
+* Author: W3schools
+* Date: 2021
+* Code version: 2.0
+* Availability: https://w3schools.com/howto/howto_css_image_transparent.asp 
+ */ 
+ 
 .container {
     position: relative;
     max-width: 1500px; /* Maximum width */
@@ -47,5 +57,5 @@ li a :hover{
 }
 
 .grid-container .grid-100{
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*choosing a favourite font*/
 }

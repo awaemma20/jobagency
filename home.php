@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="stylehome.css">
-    <link rel="stylesheet" href="unsemantic-grid-responsive-tablet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="stylehome.css"> <!-- link to css -->
+    <link rel="stylesheet" href="unsemantic-grid-responsive-tablet.css">  <!-- LINKING TO UNSEMANTIC-GRID -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!-- LINKING THE CODE LIBRARY: cdnjs/font-awesome" to syle my fonts -->
     <title>Home</title>
 </head>
 <body>
@@ -16,18 +16,18 @@
         
         <form id="form"> 
             <input type="search" id="query" name="q" placeholder="Search jobs...">
-            <button>Search..</button>
+            <button>Search..</button> <!-- search jobs -->
 
         </form>
         <!--NAVIGATION STARTS-->
         <nav>
             <ul>
                 <li><a href="Home.php">|Home|</a></li>
-                <li><a href="Login.php">|Login|</a></li>
                 <li><a href="ViewJobs.php">|View Jobs|</a></li>
                 <li><a href="CareerAdvice.php">|Career Advice|</a></li>
                 <li><a href="Register.php">|Register/Upload CV|</a></li>
-                <li><a href="ContactUs.php">|Contact Us|</a></li>   
+                <li><a href="ContactUs.php">|Contact Us|</a></li> 
+                <li><a href="Login.php">|Logout|</a></li> 
                 
             </ul>
         </nav>
@@ -35,8 +35,8 @@
     <!--MAIN STARTS-->
     <main>
         
-        <div class="container">
-            <img src="images/pic1.jpg" alt="jobs" style="width:100%; height: 700px;">
+        <div class="container"> <!-- transparent image text -->
+            <img src="images/pic1.jpg" alt="jobs" style="width:100%; height: 700px;"> 
             <div class="content">
               <h1>AWAJOBS</h1>
               <p>AWAJOBS is the leading job recruitment company in the UK. Our longing partnership with top companies 
@@ -47,6 +47,7 @@
             </div>
         </div>
 
+<!-- CODE LIBRARY USED IS "unsemantic-grid-responsive-tablet.css" -->
         <section class="grid-container">
             <div class="grid-50">
                 <p>
@@ -81,13 +82,14 @@
                     <div class= "grid-container2">
                     <div class= "grid-40">
                             <p>
-                                <embed src= "images/video.mp4" autostart="false" height="400" width="600" />
+                                <embed src= "images/video.mp4" height="400" width="600" /> <!-- embeded video -->
                                </p>
 
 
                         
                    </div>
     </main>
+    <!-- MAIN ENDS -->
     
 </body>
 
@@ -97,6 +99,14 @@
     <div class="footerlogo">
         <img src="images/Awajobs2.png" width="200" height="70">
     </div><br>
+
+    <!-- 
+        * Title: How to- social media  buttons
+        * Author: W3schools
+        * Date: 2021
+        * Code version: 2.0
+        * Availability: https://w3schools.com/howto/howto_css_social_media_buttons.asp
+     -->
     <nav>
         <ul>
             <li> <a href="https://www.facebook.com" class="fa fa-facebook"></a></li>
