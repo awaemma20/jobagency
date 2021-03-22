@@ -1,5 +1,5 @@
 <?php 
-include("db.php");
+include("db.php"); /*connection*/
 
 if(isset ($_POST["apply"])){
     $firstname = mysqli_real_escape_string($db, $_POST["fname"]);
@@ -11,7 +11,7 @@ if(isset ($_POST["apply"])){
     $position = mysqli_real_escape_string($db, $_POST["Position"]);
     
     /* 
-    * Title: PHP File upload
+        * Title: PHP File upload
         * Author: W3schools
         * Date: 2021
         * Code version: 2.0
@@ -24,7 +24,7 @@ if(isset ($_POST["apply"])){
     $filetype = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
     if(empty($emailaddress)  || empty($firstname) || empty($lastname) || empty($age) || empty($gender) || empty($target_file)){
-        $message1 ="All fields are required";
+        $message1 ="All fields are required"; /* if values are not filled return this message*/
     }elseif($_FILES["filetoupload"]["size"] > 500000){ /*constraint on the pic size*/
         $message1 = "Sorry, your file is too large.";
     }elseif($filetype != "pdf" && $filetype != "doc" && $filetype != "docx"){

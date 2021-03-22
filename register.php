@@ -1,5 +1,5 @@
 <?php 
-include("db.php");
+include("db.php"); /*connection*/
 
 if(isset ($_POST["Register"])){
     $firstname = mysqli_real_escape_string($db, $_POST["fname"]);
@@ -12,24 +12,31 @@ if(isset ($_POST["Register"])){
     $password = mysqli_real_escape_string($db, $_POST["password"]);
     $profile = mysqli_real_escape_string($db, $_POST["profile"]);
     
+    /* 
+        * Title: PHP File upload
+        * Author: W3schools
+        * Date: 2021
+        * Code version: 2.0
+        * Availability: https://w3schools.com/php/php_file_upload.asp
+     */
 
-    $target_dir = "cv/";
+    $target_dir = "cv/"; /*Upload cv*/
     $target_file = $target_dir . basename($_FILES["filetoupload"] ["name"]);
     $uploadok = 1;
     $filetype = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
     if(empty($emailaddress) || empty($password) || empty($firstname) || empty($lastname) || empty($age) || empty($gender) || empty($target_file)){
-        $message1 ="All fields are required";
-    }elseif($_FILES["filetoupload"]["size"] > 500000){
+        $message1 ="All fields are required";  /* if values are not filled return this message*/
+    }elseif($_FILES["filetoupload"]["size"] > 500000){  /*constraint on the pic size*/
         $message1 = "Sorry, your file is too large.";
-    }elseif($filetype != "pdf" && $filetype != "doc" && $filetype != "docx"){
-        $message1 = "Sorry, only pdf, doc and docx are allowed";
+    }elseif($filetype != "pdf" && $filetype != "doc" && $filetype != "docx"){ 
+        $message1 = "Sorry, only pdf, doc and docx are allowed";   /* print error message*/
            }else{
             if (move_uploaded_file($_FILES["filetoupload"]["tmp_name"], $target_file)) {
-                $sql = "INSERT INTO USERS (firstname, lastname,age,gender,emailaddress,phone_number,salary_expectation,password,profile,cv)
+                $sql = "INSERT INTO USERS (firstname, lastname,age,gender,emailaddress,phone_number,salary_expectation,password,profile,cv) 
                  values ('$firstname','$lastname','$age','$gender','$emailaddress','$phone_number','$salary_expectation','$password','$profile','$target_file')";
                  if (mysqli_query($db, $sql)) {
-                 $message2 = "upload successful!";  
+                 $message2 = "registration successful!";  /* print success message once the values listed are complete for the registration */
         } 
         else {
             echo "Error:" .$sql . "<br>" . mysqli_error($db);
