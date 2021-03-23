@@ -25,7 +25,7 @@ if(mysqli_num_rows($result) == 1){
     
     header("location:home.php");  /*if a success take me to home page*/
 } else{
-    echo"incorrect username and password";  /* print this error message*/
+    echo"incorrect email address and password";  /* print this error message*/
 }
 }
 

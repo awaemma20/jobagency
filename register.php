@@ -85,11 +85,12 @@ if(isset ($_POST["Register"])){
         <nav>
             <ul>
                 <li><a href="Home.php">|Home|</a></li> 
+                <li><a href="Login.php">|Login|</a></li> 
                 <li><a href="ViewJobs.php">|View Jobs|</a></li>
                 <li><a href="CareerAdvice.php">|Career Advice|</a></li>
                 <li><a href="Register.php">|Register/Upload CV|</a></li>
                 <li><a href="ContactUs.php">|Contact Us|</a></li>  
-                <li><a href="Login.php">|Logout|</a></li> 
+                
                 
             </ul>
         </nav>
